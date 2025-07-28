@@ -20,7 +20,7 @@ suspect_id = [0]
 # Last save time for suspect snapshots
 last_save_time = 0
 
-# --- Background Input Thread ---
+# Background Input Thread 
 def input_thread():
     while True:
         try:
@@ -32,7 +32,7 @@ def input_thread():
 
 threading.Thread(target=input_thread, daemon=True).start()
 
-# --- Main Tracking Loop ---
+#  Main Tracking Loop 
 frame_count = 0
 save_interval = 1.0  # seconds
 frame_width = 640
@@ -69,9 +69,9 @@ while True:
                     cv2.FONT_HERSHEY_SIMPLEX, 0.6, color, 2)
 
     # Resize display frame
-    display_frame = cv2.resize(frame, (700, 450))  # Smaller UI window
+    display_frame = cv2.resize(frame, (700, 450))  
     cv2.imshow("Tracking", display_frame)
-    if cv2.waitKey(1) & 0xFF in [ord('q'), 27]:  # q or ESC to quit
+    if cv2.waitKey(1) & 0xFF in [ord('q'), 27]:  # q to quit
         break
 
 cap.release()
