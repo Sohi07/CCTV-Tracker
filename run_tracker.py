@@ -3,7 +3,7 @@ from ultralytics import YOLO
 from deep_sort_realtime.deepsort_tracker import DeepSort
 import json
 
-# --- Setup ---
+# Setup 
 model = YOLO("yolov5nu.pt")
 tracker = DeepSort(max_age=30)
 
@@ -53,13 +53,13 @@ while True:
 
         cv2.circle(frame, (cx, cy), 4, (0, 255, 0), -1)
 
-    # -------- People Counting --------
+    #People Counting 
     people_count = len(active_ids)
 
-    # -------- Density Calculation --------
+    # Density Calculation
     density = people_count / FRAME_AREA
 
-    # -------- Risk Classification --------
+    # Risk Classification 
     if density < 0.0005:
         crowd_status = "SAFE"
         status_color = (0, 255, 0)
@@ -76,10 +76,10 @@ while True:
                     (100, 160),
                     cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255), 3)
 
-    # -------- Save Frame for Dashboard --------
+    # Save Frame for Dashboard 
     cv2.imwrite("latest_frame.jpg", frame)
 
-    # -------- Export Data for Streamlit --------
+    #  Export Data for Streamlit 
     data = {
         "count": people_count,
         "density": density,
