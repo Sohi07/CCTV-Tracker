@@ -7,16 +7,16 @@ The objective is to provide early warnings for crowd congestion and stampede ris
 **View the sample video output:**[LINK](https://drive.google.com/file/d/1doOBOfpZTWmoThYvXuPSxrq-i25TAjsG/view?usp=sharing)
 
 **Features**
--Real-time Person Detection using YOLO.
--Multi-Object Tracking using DeepSORT for consistent ID assignment
--Live Crowd Counting
--Dynamic Crowd Density Estimation
--Real-time Risk Classification (SAFE / MODERATE / DANGEROUS)
--Live Monitoring Dashboard using Streamlit
+- Real-time Person Detection using YOLO.
+- Multi-Object Tracking using DeepSORT for consistent ID assignment
+- Live Crowd Counting
+- Dynamic Crowd Density Estimation
+- Real-time Risk Classification (SAFE / MODERATE / DANGEROUS)
+- Live Monitoring Dashboard using Streamlit
 
 **Tech Stack**
-Python
-YOLO – Real-time object detection
-DeepSORT – Multi-object tracking
-OpenCV – Video processing
-Streamlit – Live dashboard visualization
+- Python
+- YOLO – Real-time object detection
+- DeepSORT – Multi-object tracking
+- OpenCV – Video processing
+- Streamlit – Live dashboard visualization
