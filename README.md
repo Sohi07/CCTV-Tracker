@@ -4,7 +4,7 @@ This project implements a real-time crowd safety monitoring and analysis system 
 
 The objective is to provide early warnings for crowd congestion and stampede risk, making the system applicable for public safety monitoring, surveillance analytics, and smart city applications.
 
-**View the sample video output:**[LINK](https://drive.google.com/file/d/1X6bdeFKxsFMXe6EVnOQFGQy7gGCe38po/view?usp=sharing)
+**View the sample video output:**[LINK](https://drive.google.com/file/d/1doOBOfpZTWmoThYvXuPSxrq-i25TAjsG/view?usp=sharing)
 
 **Features**
 -Real-time Person Detection using YOLO.
